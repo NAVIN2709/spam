@@ -1,65 +1,82 @@
-import { Users, ThumbsUp, Shield, TrendingDown } from 'lucide-react';
+import { Handshake, Rocket, Code, Laptop } from 'lucide-react';
 
 const steps = [
   {
-    icon: Users,
-    label: 'Students use services',
+    icon: Handshake,
+    label: 'Identify Problems',
+    description: 'E-Cell identifies real campus problems like service fragmentation and lack of offers.',
   },
   {
-    icon: ThumbsUp,
-    label: 'Rate, report & vote',
+    icon: Code,
+    label: 'Build Together',
+    description: 'We open these projects to students who build solutions under our mentorship.',
   },
   {
-    icon: Shield,
-    label: 'Student CORE reviews',
+    icon: Rocket,
+    label: 'Launch at Fests',
+    description: 'Completed projects are showcased and deployed during Pragyan.',
   },
   {
-    icon: TrendingDown,
-    label: 'Fixed campus pricing',
+    icon: Laptop,
+    label: 'Campus Impact',
+    description: 'Students use these platforms to avail services, discounts, and exclusive offers.',
   },
 ];
 
 export default function WhatIsSPAM() {
   return (
-    <section id="about" className="py-32 bg-white">
-      <div className="max-w-7xl mx-auto px-8">
-        <h2 className="text-5xl font-bold text-gray-900 mb-20 text-center">
+    <section id="about" className="py-20 md:py-32 bg-white">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 md:mb-20 text-center leading-tight">
           What is SPAM?
         </h2>
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="space-y-6">
-            <p className="text-xl text-gray-700 leading-relaxed">
-              SPAM is a student-governed platform that brings structure and
-              fairness to campus services.
-            </p>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              Students use services, rate them, and vote on decisions. A
-              dedicated student CORE team reviews all data and ensures vendors
-              follow fixed campus pricing.
-            </p>
-            <p className="text-xl text-gray-700 leading-relaxed">
-              Poor performers are removed. Good vendors stay. The community
-              decides what works.
-            </p>
-            <p className="text-xl text-gray-900 font-semibold">
-              This is governance by students, for students.
-            </p>
+        
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          
+          {/* Text Content */}
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-2xl font-bold text-indigo-600 mb-2">Shared Projects And Mentorship</h3>
+              <p className="text-xl text-gray-700 leading-relaxed">
+                SPAM is an initiative designed to bridge the gap between student talent and real-world campus needs.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h4 className="text-xl font-semibold text-gray-900">The Problem Space</h4>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                Campus services are often fragmented. Finding information about food, transport, or repairs can be a hassle, and students often miss out on exclusive discounts and offers available to them.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <h4 className="text-xl font-semibold text-gray-900">Our Solution</h4>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                We open these problem statements as projects for the student body. Selected teams build centralized platforms to solve these issues, receiving guidance and mentorship throughout the journey.
+              </p>
+            </div>
           </div>
-          <div className="space-y-6">
+
+          {/* Steps Grid */}
+          <div className="grid sm:grid-cols-2 gap-6">
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="flex items-start gap-6 p-6 bg-white border border-slate-200 rounded-xl hover:shadow-md transition-all duration-200 hover:-translate-y-1"
+                className="p-6 bg-gray-50 border border-gray-100 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 group"
               >
-                <step.icon className="w-12 h-12 text-slate-700 stroke-1.5 flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-base font-semibold text-gray-900">
-                    {step.label}
-                  </p>
+                <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <step.icon className="w-6 h-6 text-indigo-600" />
                 </div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">
+                  {step.label}
+                </h4>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {step.description}
+                </p>
               </div>
             ))}
           </div>
+          
         </div>
       </div>
     </section>

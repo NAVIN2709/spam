@@ -1,52 +1,40 @@
-import { useState } from 'react';
-import { supabase } from '../lib/supabase';
+import { useState } from "react";
 
 export default function WaitlistForm() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    accommodationType: 'hostel',
+    name: "",
+    email: "",
+    phone: "",
+    accommodationType: "hostel",
     campusAmbassador: false,
   });
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
 
+  // Simulated submission handler
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('loading');
-    setErrorMessage('');
+    setStatus("loading");
 
-    const { error } = await supabase.from('waitlist').insert([
-      {
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        accommodation_type: formData.accommodationType,
-        campus_ambassador: formData.campusAmbassador,
-      },
-    ]);
-
-    if (error) {
-      setStatus('error');
-      if (error.code === '23505') {
-        setErrorMessage('This email is already registered.');
-      } else {
-        setErrorMessage('Something went wrong. Please try again.');
-      }
-    } else {
-      setStatus('success');
+    // Simulate API delay
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+      setStatus("success");
       setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        accommodationType: 'hostel',
+        name: "",
+        email: "",
+        phone: "",
+        accommodationType: "hostel",
         campusAmbassador: false,
       });
+    } catch (error) {
+      console.error("Submission failed", error);
+      setStatus("error");
     }
   };
 
-  if (status === 'success') {
+  if (status === "success") {
     return (
       <div className="p-10 bg-white border border-slate-200 rounded-xl text-center max-w-2xl mx-auto">
         <div className="w-14 h-14 bg-slate-100 rounded-xl flex items-center justify-center mx-auto mb-6">
@@ -88,9 +76,7 @@ export default function WaitlistForm() {
             type="text"
             required
             value={formData.name}
-            onChange={(e) =>
-              setFormData({ ...formData, name: e.target.value })
-            }
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:border-slate-900 focus:outline-none transition-colors text-base"
             placeholder="Your full name"
           />
@@ -160,18 +146,20 @@ export default function WaitlistForm() {
           </label>
         </div>
 
-        {status === 'error' && (
+        {status === "error" && (
           <div className="p-3 bg-red-50 border border-red-200 rounded-lg">
-            <p className="text-sm text-red-700">{errorMessage}</p>
+            <p className="text-sm text-red-700">
+              Something went wrong. Please try again.
+            </p>
           </div>
         )}
 
         <button
           type="submit"
-          disabled={status === 'loading'}
+          disabled={status === "loading"}
           className="w-full px-8 py-3 bg-gray-900 text-white text-base font-semibold rounded-lg hover:bg-gray-800 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {status === 'loading' ? 'Submitting...' : 'Join the waitlist'}
+          {status === "loading" ? "Submitting..." : "Join the waitlist"}
         </button>
       </div>
     </form>

@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Ooty Fresh",
+    "phone": "9092483665",
+    "address": "Near Kerala Food court,Number 4 Amalorpavi complex, Dindugal Main Road, opposite National College, Ponnagar Extension, Tiruchirappalli, Tamil Nadu 620001",
+    "category": "Fruits",
+    "hours": "",
+    "distance": ""
+  },
+  {
+    "name": "Sri New Balamurugan",
+    "phone": "9865961897",
+    "address": "Near AL HABIB RESTAURANT",
+    "category": "Fruits",
+    "hours": "",
+    "distance": "2.4km"
+  },
+  {
+    "name": "New Parvathi Stores",
+    "phone": "4312513128",
+    "address": "jai Nagar,Thiruverumbur",
+    "category": "Fruits",
+    "hours": "opens at 6:30am",
+    "distance": "4.6km"
+  },
+  {
+    "name": "Farmer's Market",
+    "phone": "",
+    "address": "BHEL HPBP Complex",
+    "category": "Fruits",
+    "hours": "opens at 6am",
+    "distance": "2.9km"
+  },
+  {
+    "name": "New Sakthi Supermarket",
+    "phone": "9843212915",
+    "address": "A185,jainagar,ganesapuram,thiruverumbur",
+    "category": "Fruits",
+    "hours": "opens at 6am",
+    "distance": "4.8km"
+  },
+  {
+    "name": "Kovai pazhamudhir cholai",
+    "phone": "9087962229",
+    "address": "N.S.Complex,Chennai Main Rd,No.1 Tolgate,srirangam",
+    "category": "Fruits",
+    "hours": "closes at 10:30pm,opens at 7am",
+    "distance": "18km"
+  },
+  {
+    "name": "Balamurugan Pazhamudhir Solai",
+    "phone": "9597109091",
+    "address": "Raj nagar,Amman Nagar,Pappakurichi Kattur",
+    "category": "Fruits",
+    "hours": "6am to 9pm",
+    "distance": "8.5km"
+  },
+  {
+    "name": "Pasumai Fruit Shop",
+    "phone": "7708067701",
+    "address": "Shop no5,Sadhana Complex,Sakthi Nagar,Karumandapam,Trichy",
+    "category": "",
+    "hours": "6:30am to 10pm",
+    "distance": "17.5km"
+  },
+  {
+    "name": "N A Fruits",
+    "phone": "866568515",
+    "address": "Market,BHEL Tiruchirappali Complex area",
+    "category": "Fruits",
+    "hours": "",
+    "distance": "3.6km"
+  },
+  {
+    "name": "Padma Palamuthir Cholai",
+    "phone": "",
+    "address": "McDonalds road,Melapudur,Cantonment,Trichy",
+    "category": "Fruits",
+    "hours": "7am to 10pm",
+    "distance": "15.9km"
+  },
+  {
+    "name": "Vegetables Exporter in trichy",
+    "phone": "",
+    "address": "no:58/9/2-4,Wireless Rd,opp.stage,Airport,Trichy",
+    "category": "Fruits wholesale",
+    "hours": "24 hours open",
+    "distance": "12.7km"
+  },
+  {
+    "name": "Padma Fruit shop",
+    "phone": "9842878807",
+    "address": "QM8M+MGG Simco Road,KK Nagar Main Rd,Sundar Nagar,Edamalaipatti Pudur",
+    "category": "Fruits",
+    "hours": "6:15am to 9pm",
+    "distance": "15km"
+  },
+  {
+    "name": "S-MART FRUITS",
+    "phone": "7904533545",
+    "address": "3/59,Vayalur Rd,Vasan City,Nachikurichy,trichy",
+    "category": "Fruits wholesaler",
+    "hours": "6:30am to 10:30pm",
+    "distance": "20.6km"
+  },
+  {
+    "name": "Sri balaji fruits shop",
+    "phone": "9500340005",
+    "address": "ot-218 nelpettai st,near comeon arch,Gandhi Market,trichy",
+    "category": "fruit wholesaler",
+    "hours": "7am to 9:30pm",
+    "distance": "14.9km"
+  },
+  {
+    "name": "Padma Pazhamuthirsozhai",
+    "phone": "4312730293",
+    "address": "bus stop,vayalur road,vayaloor,kumaran nagar,trichy",
+    "category": "produce market",
+    "hours": "8am to 9pm",
+    "distance": "17.6km"
+  },
+  {
+    "name": "Royal pazhamudir sozhai and juice corner",
+    "phone": "",
+    "address": "tanjore rd,thiruverumbur",
+    "category": "fruits",
+    "hours": "9am to 9 pm",
+    "distance": "7.5km"
+  },
+  {
+    "name": "priya palamudir cholai",
+    "phone": "8681882128",
+    "address": "bus stop,opposite trichy,no 1 tolgate,samayapuram,bikshandarkoil,tn-621216",
+    "category": "fruits wholesaler",
+    "hours": "4am to 11:30pm",
+    "distance": "18km"
+  },
+  {
+    "name": "Madurai santhai",
+    "phone": "9940764469",
+    "address": "evr road,bharathi nagar ,trichy",
+    "category": "fruits",
+    "hours": "7 am to 9pm",
+    "distance": "23km"
+  },
+  {
+    "name": "kurinji metro bazzar",
+    "phone": "6384411744",
+    "address": "no 60/4 A-1C,srirangam nagar, trichy,tanjore road,kattur,thiruverumbur taluk,trichy",
+    "category": "",
+    "hours": "9am to 9:30pm",
+    "distance": "8.3km"
+  },
+  {
+    "name": "saravana fruit shop",
+    "phone": "9345132043",
+    "address": "bus stop,voc st,near rice mill,ponmalaipatti,adaikala annai nagar,thirunagar,trichy",
+    "category": "",
+    "hours": "6am to 9pm",
+    "distance": "11.6km"
+  }
+]
