@@ -13,7 +13,7 @@ export default function Hero() {
     >
       <div className="max-w-5xl mx-auto px-6 md:px-8 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6 md:mb-8">
-          Shared Projects And Mentorship
+          Campus Verse
         </h1>
         <p className="text-lg md:text-2xl text-gray-600 mb-10 md:mb-12 max-w-3xl mx-auto leading-relaxed">
           Bridging the gap between student talent and campus needs. Solving real problems, building real solutions.

@@ -28,7 +28,7 @@ export default function WhatIsSPAM() {
     <section id="about" className="py-20 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12 md:mb-20 text-center leading-tight">
-          What is SPAM?
+          What is Campus Verse?
         </h2>
         
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -36,9 +36,9 @@ export default function WhatIsSPAM() {
           {/* Text Content */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-indigo-600 mb-2">Shared Projects And Mentorship</h3>
+              <h3 className="text-2xl font-bold text-indigo-600 mb-2">Campus Verse</h3>
               <p className="text-xl text-gray-700 leading-relaxed">
-                SPAM is an initiative designed to bridge the gap between student talent and real-world campus needs.
+                Campus Verse is an initiative designed to bridge the gap between student talent and real-world campus needs.
               </p>
             </div>
 

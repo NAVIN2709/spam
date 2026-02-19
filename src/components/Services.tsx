@@ -77,20 +77,20 @@ export default function Services() {
                   <p className="text-sm text-gray-500 hidden sm:block">{service.description}</p>
                 </div>
               </div>
-              {service.data.length > 3 && (
-                <div className="hidden md:flex items-center text-sm font-medium text-indigo-600 animate-pulse">
+              {service.data.length > 1 && (
+                <div className="flex items-center text-sm font-medium text-indigo-600 animate-pulse">
                   Scroll for more <ChevronRight className="w-4 h-4 ml-1" />
                 </div>
               )}
             </div>
 
             {/* Carousel Container */}
-            <div className="flex overflow-x-auto px-4 sm:px-6 lg:px-8 pb-8 gap-6 scrollbar-hide snap-x">
+            <div className="flex overflow-x-auto px-4 sm:px-6 lg:px-8 pb-8 gap-6 scrollbar-hide snap-x scroll-pl-4">
               {service.data.length > 0 ? (
                 service.data.map((item: any, idx) => (
                   <div 
                     key={idx} 
-                    className="min-w-[300px] md:min-w-[350px] max-w-[350px] bg-white rounded-2xl p-6 shadow-sm border border-gray-100 snap-center hover:shadow-md transition-shadow duration-300 flex flex-col"
+                    className="min-w-[85vw] sm:min-w-[300px] md:min-w-[350px] max-w-[350px] bg-white rounded-2xl p-6 shadow-sm border border-gray-100 snap-start hover:shadow-md transition-shadow duration-300 flex flex-col"
                   >
                     <div className="flex justify-between items-start mb-4">
                       <h4 className="font-bold text-lg text-gray-900 line-clamp-2 leading-tight">
@@ -142,7 +142,7 @@ export default function Services() {
                   </div>
                 ))
               ) : (
-                 <div className="w-full text-center py-12 bg-white rounded-2xl border border-dashed border-gray-300">
+                 <div className="w-full min-w-[85vw] sm:min-w-[300px] text-center py-12 bg-white rounded-2xl border border-dashed border-gray-300 snap-start">
                     <p className="text-gray-400 font-medium">Coming Soon</p>
                     <p className="text-sm text-gray-400 mt-1">We are working on adding {service.title.toLowerCase()}.</p>
                  </div>

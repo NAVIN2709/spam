@@ -32,7 +32,7 @@ export default function Navigation() {
           onClick={() => scrollToSection('hero')}
           className="text-2xl font-bold text-gray-900 z-50 relative"
         >
-          SPAM
+          Campus Verse
         </button>
 
         {/* Desktop Menu */}
