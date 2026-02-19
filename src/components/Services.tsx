@@ -88,7 +88,8 @@ export default function Services() {
             <div className="flex overflow-x-auto px-4 sm:px-6 lg:px-8 pb-8 gap-6 scrollbar-hide snap-x scroll-pl-4">
               {service.data.length > 0 ? (
                 service.data.map((item: any, idx) => (
-                  <div 
+                  
+                  <div  
                     key={idx} 
                     className="min-w-[85vw] sm:min-w-[300px] md:min-w-[350px] max-w-[350px] bg-white rounded-2xl p-6 shadow-sm border border-gray-100 snap-start hover:shadow-md transition-shadow duration-300 flex flex-col"
                   >
